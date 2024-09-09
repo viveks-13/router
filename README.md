@@ -1,27 +1,70 @@
-Open up a terminal
-Run the following command to copy the code
+# Getting Started
+
+## Cloning the Repository
+
+Open up a terminal and run the following command to clone the repository:
+
+```bash
 git clone https://github.com/viveks-13/router.git
-To make changes for a new feature:
-  Create a new branch using: git checkout -b branch_name
-  Saving changes: git add .
-  Commiting changes: git commit -m "your message here"
-  Pushing changes: git push origin branch_name
-  Pulling down new changes: git pull origin branch_name
-Once you push your changes up to save progress, you can create a pull request by going to github website and creating one through the UI here
-Lowk ask chat for any questions it's goated with github stuff, but just make sure you don't push changes directly to main branch since that should stay stable
-First time you try to pull the code/push it might ask you to set credentials if you haven't, the password isn't a password but instead a personal access token (PAT)
-  Create the PAT by going to settings -> developer settings -> access tokens -> create new classic -> give it a name, no expiration, and access to all the fields
+```
 
+## Making Changes for a New Feature
 
-Project vision:
+1. **Create a new branch**:
 
-App opens up with a prompt box that the user types into
-  Sample prompts could be something like: "Create me a route from Seattle to California stopping every 150 miles for gas and every 5 hours for food"
-Submit the prompt
-User then gets a list of different routes that they can select from with key features highlighted (total time, mileage, etc.)
-User selects the route they want/can fine-tune a specific route more by clicking on it and then adding in another prompt (can add this in later tho and just start with creating one route and forcing user to use that)
-Route opens up in google maps or maybe even in the app itself not sure what the google maps API looks like yet
+    ```bash
+    git checkout -b branch_name
+    ```
 
-Frameworks:
-UI is set-up to be run through Storyboard, plenty of documentation online and on chat for how to use it
+2. **Save changes**:
 
+    ```bash
+    git add .
+    ```
+
+3. **Commit changes**:
+
+    ```bash
+    git commit -m "your message here"
+    ```
+
+4. **Push changes**:
+
+    ```bash
+    git push origin branch_name
+    ```
+
+5. **Pull new changes**:
+
+    ```bash
+    git pull origin branch_name
+    ```
+
+## Creating a Pull Request
+
+Once you push your changes to save progress, create a pull request through the GitHub website UI [here](https://github.com/viveks-13/router/pulls).
+
+## Notes
+
+- Lowk ask chat for any github stuff that doesn't work/is confusing its hella cracked
+- Do **not** push changes directly to the main branch, as it should remain stable.
+- The first time you try to pull code or push changes, you might be asked to set credentials. Note that the password is a Personal Access Token (PAT), not a regular password.
+
+To create a PAT:
+1. Go to **Settings** -> **Developer settings** -> **Access tokens**.
+2. Create a new classic token:
+   - Give it a name
+   - Set no expiration
+   - Grant access to all fields
+
+# Project Vision
+
+- The app opens with a prompt box where users can type in their request.
+  - Sample prompts: "Create me a route from Seattle to California stopping every 150 miles for gas and every 5 hours for food."
+- Users submit the prompt and receive a list of different routes with key features highlighted (total time, mileage, etc.).
+- Users can select a route or fine-tune a specific route by clicking on it and adding another prompt (initially, you might start with creating one route and force users to use that).
+- The route opens in Google Maps or possibly within the app itself, depending on the capabilities of the Google Maps API.
+
+## Frameworks
+
+- The UI is set up to be run through Storyboard. There is plenty of documentation available online and through ChatGPT on how to use it.
